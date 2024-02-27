@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "rBButI12d5UMfh5xzgbZDoLbBISb77PFUDn9B/gYrHHY4e8rHmMjEfwnP37pxaNrJ5bmSQMvNP2v00jSah04Mw==",
+  "dgSpecHash": "1hBVVJjQf36IK4QPuJ49GvTjgeOy6etZ0C+mzgq4Iw7jj7OLBhP2PvDcX1pWC3/7o+0r3ca/ffftUWFJaIkf5g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\WPF_Shema_26_02_2024.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Fishman\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Fishman\\.nuget\\packages\\system.text.encoding.codepages\\8.0.0\\system.text.encoding.codepages.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

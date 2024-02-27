@@ -18,3 +18,8 @@ C:\Users\Fishman\Documents\GitHub\WPF_Shema_26_02_2024\obj\Debug\net6.0-windows\
 C:\Users\Fishman\Documents\GitHub\WPF_Shema_26_02_2024\obj\Debug\net6.0-windows\WPF_Shema_26_02_2024.pdb
 C:\Users\Fishman\Documents\GitHub\WPF_Shema_26_02_2024\obj\Debug\net6.0-windows\WPF_Shema_26_02_2024.genruntimeconfig.cache
 C:\Users\Fishman\Documents\GitHub\WPF_Shema_26_02_2024\obj\Debug\net6.0-windows\ref\WPF_Shema_26_02_2024.dll
+C:\Users\Fishman\Documents\GitHub\WPF_Shema_26_02_2024\obj\Debug\net6.0-windows\WPF_Shema_26_02_2024.sourcelink.json
+C:\Users\Fishman\Documents\GitHub\WPF_Shema_26_02_2024\bin\Debug\net6.0-windows\System.Text.Encoding.CodePages.dll
+C:\Users\Fishman\Documents\GitHub\WPF_Shema_26_02_2024\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
+C:\Users\Fishman\Documents\GitHub\WPF_Shema_26_02_2024\obj\Debug\net6.0-windows\WPF_Shema_26_02_2024.csproj.AssemblyReference.cache
+C:\Users\Fishman\Documents\GitHub\WPF_Shema_26_02_2024\obj\Debug\net6.0-windows\WPF_Shem.FFB23341.Up2Date

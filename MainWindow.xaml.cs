@@ -17,6 +17,8 @@ namespace WPF_Shema_26_02_2024
     /// </summary>
     public partial class MainWindow : Window
     {
+        // список для хранения обьектов
+        List<string> list = new List<string>();
         public MainWindow()
         {
             InitializeComponent();
@@ -24,8 +26,7 @@ namespace WPF_Shema_26_02_2024
 
         private void ButtonTest_Click(object sender, RoutedEventArgs e)
         {
-            // список для хранения обьектов
-            List<string> list = new List<string>();
+            
 
             // создаём массив decimal для сравнения
             decimal[] mass_mod;
@@ -39,7 +40,9 @@ namespace WPF_Shema_26_02_2024
             int i = 0;
             int a = 0;
             int j = 0;
+            // начало т.е первый лист
             int last = 0;
+            // приращение, второй лист, третий лист м т.д 
             int future = 700;
 
             // разделяем по строкам текстбокс с именами модулей контроллера
@@ -48,61 +51,57 @@ namespace WPF_Shema_26_02_2024
             string[] mass_ward_name = TextBox_ward_name.Text.Split(separator, StringSplitOptions.RemoveEmptyEntries);
             string[] mass_ward_xcoor = TextBox_ward_xcoor.Text.Split(separator, StringSplitOptions.RemoveEmptyEntries);
 
-            // создаём словарь ключ - порядковый элемент 0 - 700, 700 - 1400,
-            //             значение - количество модулей 1,2,3,4,5
-            var modulDict = new Dictionary<int,int>();
-
             // переделываем стринговский массив в тип double
-            int dictCount = 0;
-            foreach (string item in mass_mod_coor)
-            {
-                // добавляем элемент в массив
-                mass_mod[a] = decimal.Parse(item);
-                // преобразуем  массив в инт для сравнения
-                int dictIf = Convert.ToInt32(mass_mod[a]);
-                // пробегаем по массиву и считаем сколько модулей на листе  по 700
-                while ((dictIf > last) && (dictIf < future))
-                {
-                    modulDict[a] = dictCount;
-                    dictCount++;
-                    a++;
-                }
-                last = future;
-                future += 700;
-               
-            }
-
+            //int dictCount = 0;
             try
             {
-               
-               
-                    foreach (string s in mass_mod_coor)
+                // цикл для перевода децимал в инт
+                foreach (string item in mass_mod_coor)
+                {
+                    // добавляем элемент в массив
+                    mass_mod[a] = decimal.Parse(item);
+                    a++;
+                }
+                // цикл для заполнения обьектов
+                foreach (string item in mass_mod_number)
+                {
+                    WardControl ward = new WardControl();
+                    while (mass_mod[j] <= 1700 && mass_mod[j]>0)
                     {
-                        WardControl wardControl = new WardControl();
-                        wardControl.modulNumberA = mass_mod_number[i];
-                        wardControl.modulNumberB = mass_mod_number[i];
-                        wardControl.modulNumberC = mass_mod_number[i];
-                        wardControl.modulNumberD = mass_mod_number[i];
-                        wardControl.modulNumberE = mass_mod_number[i];
-                        wardControl.modulXcoor = mass_mod_coor[i];
-                        wardControl.wardName = mass_ward_name[i];
-                        wardControl.wardXcoor = mass_ward_xcoor[i];
-                        list.Add(wardControl.ToString());
-                        i++;
+                            ward.modulNumberA.Add( mass_mod_number[j]);
+                        j++;
                     }
+                    ward.modulXcoor = mass_mod_coor[i];
+                    ward.wardName = mass_ward_name[i];
+                    ward.wardXcoor = mass_ward_xcoor[i];
+                     
+                    list.Add(ward.ToString() + ward.NumberModulToString() );
+                    i++;
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
+                
+            }
+            finally
+            {
+
             }
         }
 
 
         private void ButtonSave_Click(object sender, RoutedEventArgs e)
         {
+            string saveStr = string.Empty;
+            // заполняем строку для сохранения
+            foreach (var item in list)
+            {
+                saveStr += item.ToString()+"\n";
+            }
             // сохраняем в csv
             SaveCSV saveCsv = new SaveCSV();
-            saveCsv.saveCSV("dghdfg");
+            saveCsv.saveCSV(saveStr);
         }
 
         private void ButtonExit_Click(object sender, RoutedEventArgs e)

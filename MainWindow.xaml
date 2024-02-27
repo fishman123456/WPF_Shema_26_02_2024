@@ -12,8 +12,7 @@
             <ColumnDefinition Width="100*"/>
             <ColumnDefinition Width="100*"/>
             <ColumnDefinition Width="100*"/>
-            <ColumnDefinition Width="100*"/>
-            <ColumnDefinition Width="100*"/>
+   
 
         </Grid.ColumnDefinitions>
         <!-- 9 строк высотой 50  9 столбцов шириной 100 итого высота 450 ширина 800  -->

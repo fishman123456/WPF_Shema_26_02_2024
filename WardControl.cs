@@ -15,25 +15,25 @@ namespace WPF_Shema_26_02_2024
         // координаты шкафа
         public string wardXcoor = "65.44";
         // номер модуля
-        public List <string> modulNumberA ;
+        public List <string> modulNumberA = new List<string>() ;
         // координаты модуля
         public string modulXcoor = "45.66";
 
-        public override string ToString() => 
-              " Имя шкафа: " 
-            + wardName + "_" 
-            + " Координата шкафа: " 
-            + wardXcoor + "_"
-            + " Номер модуля: "
-            + modulNumberA + "_"
-            + " Координата модуля: "
-            + modulXcoor ;
-        public static string NumberModulToString( List<string> modulNumberA)
+        public override string ToString() =>        
+             wardName; 
+            //+ "_" 
+            //+ " Координата шкафа: " 
+            //+ wardXcoor + "_"
+            //+ " Номер модуля: "
+            //+ modulNumberA + "_"
+            //+ " Координата модуля: "
+            //+ modulXcoor ;
+        public string NumberModulToString()
         {
             string result = "";
             foreach (var modul in modulNumberA) 
-            { result += modul.ToString(); }
-            return result;
+            { result += modul.ToString() + " "; }
+            return " (" + result + ")";
         }
     }
 }
