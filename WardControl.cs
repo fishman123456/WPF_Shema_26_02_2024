@@ -15,15 +15,7 @@ namespace WPF_Shema_26_02_2024
         // координаты шкафа
         public string wardXcoor = "65.44";
         // номер модуля
-        public string modulNumberA = "-";
-        // номер модуля
-        public string modulNumberB = "-";
-        // номер модуля
-        public string modulNumberC = "-";
-        // номер модуля
-        public string modulNumberD = "-";
-        // номер модуля
-        public string modulNumberE = "-";
+        public List <string> modulNumberA ;
         // координаты модуля
         public string modulXcoor = "45.66";
 
@@ -34,11 +26,14 @@ namespace WPF_Shema_26_02_2024
             + wardXcoor + "_"
             + " Номер модуля: "
             + modulNumberA + "_"
-            + modulNumberB + "_"
-            + modulNumberC + "_"
-            + modulNumberD + "_"
-            + modulNumberE + "_"
             + " Координата модуля: "
             + modulXcoor ;
+        public static string NumberModulToString( List<string> modulNumberA)
+        {
+            string result = "";
+            foreach (var modul in modulNumberA) 
+            { result += modul.ToString(); }
+            return result;
+        }
     }
 }
