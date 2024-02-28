@@ -41,7 +41,7 @@ namespace WPF_Shema_26_02_2024
             int a = 0;
             int j = 0;
             // начало т.е первый лист
-            int last = 0;
+            int last = 200;
             // приращение, второй лист, третий лист м т.д 
             int future = 700;
 
@@ -66,7 +66,7 @@ namespace WPF_Shema_26_02_2024
                 foreach (string item in mass_mod_number)
                 {
                     WardControl ward = new WardControl();
-                    while (mass_mod[j] <= 1700 && mass_mod[j]>0)
+                    while (mass_mod[j] <= future && mass_mod[j] >= last && mass_mod[j]>0)
                     {
                             ward.modulNumberA.Add( mass_mod_number[j]);
                         j++;
@@ -77,6 +77,9 @@ namespace WPF_Shema_26_02_2024
                      
                     list.Add(ward.ToString() + ward.NumberModulToString() );
                     i++;
+                    // присваиваем преведущее last = future, а future увеличиваем на 700
+                    last = future;
+                    future += 700;
                 }
             }
             catch (Exception ex)
@@ -128,6 +131,17 @@ namespace WPF_Shema_26_02_2024
         {
             // замена точек на запятые
             string str = TextBox_ward_xcoor.Text;
+            if (str.Contains("."))
+            {
+                string s = str.Replace(".", ",");
+                TextBox_ward_xcoor.Clear();
+                TextBox_ward_xcoor.AppendText(str.Replace(".", ","));
+            }
+        }
+
+        // функция для замены точек на запятую
+        public void replasePoint(string str)
+        {
             if (str.Contains("."))
             {
                 string s = str.Replace(".", ",");
