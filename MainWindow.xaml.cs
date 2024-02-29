@@ -36,15 +36,6 @@ namespace WPF_Shema_26_02_2024
             // расделителем может служить один символ, поэтому строку создаём, т е массив символов
             string[] separator = { "\n", "\r" };
 
-            // добавляем данные в список из текстбокса textbox_Y_coor -13-07-2023
-            int i = 0;
-            int a = 0;
-            int j = 0;
-            // начало т.е первый лист
-            int last = 200;
-            // приращение, второй лист, третий лист м т.д 
-            int future = 700;
-
             // разделяем по строкам текстбокс с именами модулей контроллера
             string[] mass_mod_coor = TextBox_mod_xcoor.Text.Split(separator, StringSplitOptions.RemoveEmptyEntries);
             string[] mass_mod_number = TextBox_mod_number.Text.Split(separator, StringSplitOptions.RemoveEmptyEntries);
@@ -55,6 +46,7 @@ namespace WPF_Shema_26_02_2024
             //int dictCount = 0;
             try
             {
+                int a = 0;
                 // цикл для перевода децимал в инт
                 foreach (string item in mass_mod_coor)
                 {
@@ -62,21 +54,36 @@ namespace WPF_Shema_26_02_2024
                     mass_mod[a] = decimal.Parse(item);
                     a++;
                 }
-                // цикл для заполнения обьектов
-                foreach (string item in mass_mod_number)
+                // перебираем строки текстбокса номер модуля
+                int j = 0;
+                // Перебираем строки координаты номера модуля
+                int i = 0;
+                // Перебираем строки координаты, имя шкафа
+                int wardnum = 0;
+                // начало т.е первый лист
+                int last = 200;
+                // приращение, второй лист, третий лист м т.д 
+                int future = 700;
+
+                // цикл для заполнения обьектов цикл по количеству имени шкафа
+                foreach (string item in mass_ward_name)
                 {
                     WardControl ward = new WardControl();
+
+                    // берем имя модуля где координаты по 700 и увеличение по 700
                     while (mass_mod[j] <= future && mass_mod[j] >= last && mass_mod[j]>0)
                     {
                             ward.modulNumberA.Add( mass_mod_number[j]);
                         j++;
+                        ward.modulXcoor = mass_mod_coor[i];
+                        i++;
                     }
-                    ward.modulXcoor = mass_mod_coor[i];
-                    ward.wardName = mass_ward_name[i];
-                    ward.wardXcoor = mass_ward_xcoor[i];
-                     
+                    // добавляем в обьект имя шкафа
+                    ward.wardName = mass_ward_name[wardnum];
+                    ward.wardXcoor = mass_ward_xcoor[wardnum];
+                    wardnum++;
+
                     list.Add(ward.ToString() + ward.NumberModulToString() );
-                    i++;
                     // присваиваем преведущее last = future, а future увеличиваем на 700
                     last = future;
                     future += 700;
