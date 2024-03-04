@@ -30,7 +30,7 @@ namespace WPF_Shema_26_02_2024
 
             // создаём массив decimal для сравнения
             decimal[] mass_mod;
-            mass_mod = new decimal[300];
+            mass_mod = new decimal[1000];
 
             // строка по которой будем разбивать текстбокс
             // расделителем может служить один символ, поэтому строку создаём, т е массив символов
@@ -38,7 +38,7 @@ namespace WPF_Shema_26_02_2024
 
             // разделяем по строкам текстбокс с именами модулей контроллера
             string[] mass_mod_coor = TextBox_mod_xcoor.Text.Split(separator, StringSplitOptions.RemoveEmptyEntries);
-            string[] mass_mod_number = TextBox_mod_number.Text.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+            string[] mass_mod_Name = TextBox_mod_number.Text.Split(separator, StringSplitOptions.RemoveEmptyEntries);
             string[] mass_ward_name = TextBox_ward_name.Text.Split(separator, StringSplitOptions.RemoveEmptyEntries);
             string[] mass_ward_xcoor = TextBox_ward_xcoor.Text.Split(separator, StringSplitOptions.RemoveEmptyEntries);
 
@@ -73,7 +73,7 @@ namespace WPF_Shema_26_02_2024
                     // берем имя модуля где координаты по 700 и увеличение по 700
                     while (mass_mod[j] <= future && mass_mod[j] >= last && mass_mod[j]>0)
                     {
-                            ward.modulNumberA.Add( mass_mod_number[j]);
+                        ward.modulNumberA.Add( mass_mod_Name[j]);
                         j++;
                         ward.modulXcoor = mass_mod_coor[i];
                         i++;
@@ -82,8 +82,9 @@ namespace WPF_Shema_26_02_2024
                     ward.wardName = mass_ward_name[wardnum];
                     ward.wardXcoor = mass_ward_xcoor[wardnum];
                     wardnum++;
-
-                    list.Add(ward.ToString() + ward.NumberModulToString() );
+                   
+                    // добавляем элементы в список
+                    list.Add(ward.ToString() + ward.NumberModulToString() + ";" + last + ";" + "номер листа " + wardnum);
                     // присваиваем преведущее last = future, а future увеличиваем на 700
                     last = future;
                     future += 700;
@@ -91,6 +92,7 @@ namespace WPF_Shema_26_02_2024
             }
             catch (Exception ex)
             {
+                mass_mod = null;
                 MessageBox.Show(ex.ToString());
                 
             }
@@ -100,7 +102,10 @@ namespace WPF_Shema_26_02_2024
             }
         }
 
-
+        private void ButtonClearList_Click(object sender, RoutedEventArgs e)
+        {
+           list.Clear();
+        }
         private void ButtonSave_Click(object sender, RoutedEventArgs e)
         {
             string saveStr = string.Empty;
@@ -156,5 +161,7 @@ namespace WPF_Shema_26_02_2024
                 TextBox_ward_xcoor.AppendText(str.Replace(".", ","));
             }
         }
+
+       
     }
 }

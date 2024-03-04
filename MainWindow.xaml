@@ -51,6 +51,9 @@
         <Label Content="X шкафа" Grid.Row="0" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="1"
                 Margin="10" HorizontalContentAlignment="Center" FontSize="20"/>
 
+        <Button x:Name="ButtonClearList" Content="Очистить" Grid.Row="6" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="1"
+         Margin="10" HorizontalContentAlignment="Center" FontSize="20" BorderBrush="Aqua" Click="ButtonClearList_Click"   />
+        
         <Button x:Name="ButtonTest" Content="Тест" Grid.Row="6" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="1"
          Margin="10" HorizontalContentAlignment="Center" FontSize="20" BorderBrush="Aqua" Click="ButtonTest_Click" />
 
@@ -58,7 +61,8 @@
          Margin="10" HorizontalContentAlignment="Center" FontSize="20" BorderBrush="Aqua" Click="ButtonSave_Click" />
 
         <Button x:Name="ButtonExit" Content="Выход" Grid.Row="6" Grid.Column="1" Grid.RowSpan="1" Grid.ColumnSpan="1"
-  Margin="10" HorizontalContentAlignment="Center" FontSize="20" BorderBrush="Aqua" Click="ButtonExit_Click"  />
+         Margin="10" HorizontalContentAlignment="Center" FontSize="20" BorderBrush="Aqua" Click="ButtonExit_Click"  />
+        
 
     </Grid>
 </Window>
