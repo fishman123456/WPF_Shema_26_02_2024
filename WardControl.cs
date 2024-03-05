@@ -41,16 +41,17 @@ namespace WPF_Shema_26_02_2024
             List<string> strings = new List<string>();
             strings = modulNumberA.Distinct().ToList();
             // делаем заполнение стринга из списка
-            string result = "";
+            StringBuilder result = new StringBuilder();
+            
             int item = 0;
             foreach (var modul in strings)
             {
-                result += modul.ToString();
+                result.Append( modul.ToString());
               
                 // добавляем запятую
                 if (strings.Count-1 != item)
                 {
-                    result += ", ";
+                    result.Append( ", ");
                 }
                 item++;
             }
