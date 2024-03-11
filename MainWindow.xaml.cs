@@ -75,8 +75,10 @@ namespace WPF_Shema_26_02_2024
                     {
                         ward.modulNumberA.Add( mass_mod_Name[j]);
                         j++;
-                        ward.modulXcoor = mass_mod_coor[i];
-                        i++;
+                        ward.modulXcoor =Convert.ToDouble( mass_mod_coor[i]);
+                        if (ward.modulXcoor >= last) {
+                            i++;
+                        }
                     }
                     // добавляем в обьект имя шкафа
                     ward.wardName = mass_ward_name[wardnum];

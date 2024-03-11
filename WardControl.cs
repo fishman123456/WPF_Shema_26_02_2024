@@ -18,7 +18,7 @@ namespace WPF_Shema_26_02_2024
         // номер модуля
         public List<string> modulNumberA = new List<string>();
         // координаты модуля
-        public string modulXcoor = "45.66";
+        public double modulXcoor = 45.66;
 
         //// удаление дубликатов
         //public List<string> removeDuplicates(List<string> list)
