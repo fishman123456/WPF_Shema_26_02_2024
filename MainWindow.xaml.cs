@@ -164,6 +164,10 @@ namespace WPF_Shema_26_02_2024
             }
         }
 
-       
+        private void ButtonHelp_Click(object sender, RoutedEventArgs e)
+        {
+         Window1 window1 = new Window1();
+            window1.Show();
+        }
     }
 }
