@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Shema_26_02_2024"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="U-83-14-03-2024" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <TextBlock LineHeight="1" FontSize="20" Margin="25"  TextWrapping="Wrap" >
+                При использовании приложения выполните следующее
+        </TextBlock>
+        <TextBlock LineHeight="1" FontSize="20" Margin="25,50,25,25"   TextWrapping="Wrap" >
+         1) Скопируйте извлеченные данные из AUTOCAD в № модуля (Содержимое - ШС7.SF) X модуля (Положение X1 - 287.5)
+        </TextBlock>
+        <TextBlock LineHeight="1" FontSize="20" Margin="25,100,25,25"   TextWrapping="Wrap" >
+         2) Скопируйте извлеченные данные из AUTOCAD в имя шкафа (Содержимое - Шкаф ШК) Х шкафа (Положение X - 334.8)
+        </TextBlock>
+        <TextBlock LineHeight="1" FontSize="20" Margin="25,150,25,25"   TextWrapping="Wrap" >
+         3) Для окончания выбора по шкафу, нужно поставить тире "-" в конце списка
+        </TextBlock>
+        <TextBlock LineHeight="1" FontSize="20" Margin="25,175,25,25"   TextWrapping="Wrap" >
+         4) В чертеже нужно обязательно расставить имя шкафа возле каждого кабеля. 
+            Имена шкафов должны иметь одинаковые координаты по оси Х.
+        </TextBlock>
+        <TextBlock LineHeight="1" FontSize="20" Margin="25,175,25,25"   TextWrapping="Wrap" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="#FF27AD1C" >
+13-03-2024 U-83
+        </TextBlock>
     </Grid>
 </Window>

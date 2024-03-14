@@ -26,11 +26,13 @@ namespace WPF_Shema_26_02_2024
 
         private void ButtonTest_Click(object sender, RoutedEventArgs e)
         {
-            
+
 
             // создаём массив decimal для сравнения
-            decimal[] mass_mod;
-            mass_mod = new decimal[1000];
+            double[] mass_mod;
+            mass_mod = new double[1000];
+            double[] mass_ward;
+            mass_ward = new double[1000];
 
             // строка по которой будем разбивать текстбокс
             // расделителем может служить один символ, поэтому строку создаём, т е массив символов
@@ -51,7 +53,15 @@ namespace WPF_Shema_26_02_2024
                 foreach (string item in mass_mod_coor)
                 {
                     // добавляем элемент в массив
-                    mass_mod[a] = decimal.Parse(item);
+                    mass_mod[a] = double.Parse(item);
+                    a++;
+                }
+                a = 0;
+                // цикл для перевода децимал в инт
+                foreach (string item in mass_ward_xcoor)
+                {
+                    // добавляем элемент в массив
+                    mass_ward[a] = double.Parse(item);
                     a++;
                 }
                 // перебираем строки текстбокса номер модуля
@@ -60,33 +70,50 @@ namespace WPF_Shema_26_02_2024
                 int i = 0;
                 // Перебираем строки координаты, имя шкафа
                 int wardnum = 0;
+                // номер листа 
+                int layotnum = 0;
                 // начало т.е первый лист
-                int last = 200;
+                int last = 0;
                 // приращение, второй лист, третий лист м т.д 
                 int future = 700;
 
-                // цикл для заполнения обьектов цикл по количеству имени шкафа
-                foreach (string item in mass_ward_name)
+                // цикл для заполнения обьектов пока координаты
+                while (mass_ward_name[wardnum] != "-")
                 {
                     WardControl ward = new WardControl();
 
                     // берем имя модуля где координаты по 700 и увеличение по 700
-                    while (mass_mod[j] <= future && mass_mod[j] >= last && mass_mod[j]>0)
+                    while (mass_mod[j] <= future && mass_mod[j] >= last && mass_mod[j] > 0)
                     {
-                        ward.modulNumberA.Add( mass_mod_Name[j]);
+                        ward.modulNumberA.Add(mass_mod_Name[j]);
                         j++;
-                        ward.modulXcoor =Convert.ToDouble( mass_mod_coor[i]);
-                        if (ward.modulXcoor >= last) {
+                        ward.modulXcoor = Convert.ToDouble(mass_mod_coor[i]);
+                        if (ward.modulXcoor >= last)
+                        {
                             i++;
                         }
                     }
+
                     // добавляем в обьект имя шкафа
                     ward.wardName = mass_ward_name[wardnum];
-                    ward.wardXcoor = mass_ward_xcoor[wardnum];
+                    ward.wardXcoor = mass_ward[wardnum];
+                    //wardnum++;
+                    layotnum++;
+                    list.Add(ward.ToString() + ward.NumberModulToString() + ";" + last + ";" + "номер листа " + layotnum +
+                        " коорд шкафа " + ward.wardXcoor);
                     wardnum++;
-                   
-                    // добавляем элементы в список
-                    list.Add(ward.ToString() + ward.NumberModulToString() + ";" + last + ";" + "номер листа " + wardnum);
+                    //если несколько кабельных линий
+                    if (mass_ward_xcoor.Length > wardnum + 1)
+                    {
+                        string comparisonWardX = mass_ward_xcoor[wardnum];
+
+                        while (mass_ward[wardnum] <= future && mass_ward[wardnum] >= last && mass_ward[wardnum] > 0 && mass_ward_xcoor.Length > wardnum + 1)
+                        {
+                            list.Add(ward.ToString() + ward.NumberModulToString() + ";" + last + ";" + "номер листа " + layotnum +
+                                 " коорд шкафа " + ward.wardXcoor);
+                            wardnum++;
+                        }
+                    }
                     // присваиваем преведущее last = future, а future увеличиваем на 700
                     last = future;
                     future += 700;
@@ -96,7 +123,7 @@ namespace WPF_Shema_26_02_2024
             {
                 mass_mod = null;
                 MessageBox.Show(ex.ToString());
-                
+
             }
             finally
             {
@@ -106,7 +133,7 @@ namespace WPF_Shema_26_02_2024
 
         private void ButtonClearList_Click(object sender, RoutedEventArgs e)
         {
-           list.Clear();
+            list.Clear();
         }
         private void ButtonSave_Click(object sender, RoutedEventArgs e)
         {
@@ -114,7 +141,7 @@ namespace WPF_Shema_26_02_2024
             // заполняем строку для сохранения
             foreach (var item in list)
             {
-                saveStr += item.ToString()+"\n";
+                saveStr += item.ToString() + "\n";
             }
             // сохраняем в csv
             SaveCSV saveCsv = new SaveCSV();
@@ -166,7 +193,7 @@ namespace WPF_Shema_26_02_2024
 
         private void ButtonHelp_Click(object sender, RoutedEventArgs e)
         {
-         Window1 window1 = new Window1();
+            Window1 window1 = new Window1();
             window1.Show();
         }
     }

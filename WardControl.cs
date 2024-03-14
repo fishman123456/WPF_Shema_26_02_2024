@@ -12,13 +12,13 @@ namespace WPF_Shema_26_02_2024
     public class WardControl
     {
         // имя шкафа
-        public string wardName = "yu";
+        public string? wardName;
         // координаты шкафа
-        public string wardXcoor = "65.44";
+        public double wardXcoor;
         // номер модуля
         public List<string> modulNumberA = new List<string>();
         // координаты модуля
-        public double modulXcoor = 45.66;
+        public double modulXcoor;
 
         //// удаление дубликатов
         //public List<string> removeDuplicates(List<string> list)
