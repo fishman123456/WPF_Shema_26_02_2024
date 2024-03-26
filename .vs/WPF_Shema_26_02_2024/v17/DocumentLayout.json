@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|c:\\users\\fishman\\documents\\github\\wpf_shema_26_02_2024\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
-      "RelativeMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|solutionrelative:classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|c:\\users\\fishman\\documents\\github\\wpf_shema_26_02_2024\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|solutionrelative:window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|c:\\users\\fishman\\documents\\github\\wpf_shema_26_02_2024\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|c:\\users\\fishman\\documents\\github\\wpf_shema_26_02_2024\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|c:\\users\\fishman\\documents\\github\\wpf_shema_26_02_2024\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|c:\\users\\fishman\\documents\\github\\wpf_shema_26_02_2024\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|solutionrelative:classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|c:\\users\\fishman\\documents\\github\\wpf_shema_26_02_2024\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|solutionrelative:window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|c:\\users\\fishman\\documents\\github\\wpf_shema_26_02_2024\\help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 253,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -61,28 +61,54 @@
               "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ClassDiagram1.cd",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\ClassDiagram1.cd",
               "RelativeDocumentMoniker": "ClassDiagram1.cd",
               "ToolTip": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\ClassDiagram1.cd",
               "RelativeToolTip": "ClassDiagram1.cd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2024-03-14T07:10:35.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-14T07:10:35.778Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Window1.xaml",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\Window1.xaml",
               "RelativeDocumentMoniker": "Window1.xaml",
               "ToolTip": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\Window1.xaml",
               "RelativeToolTip": "Window1.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-11T10:12:03.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T10:12:03.686Z"
             },
             {
               "$type": "Document",
@@ -94,8 +120,7 @@
               "RelativeToolTip": "Help.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T10:08:11.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T10:08:11.362Z"
             },
             {
               "$type": "Document",
@@ -107,8 +132,7 @@
               "RelativeToolTip": "WardControl.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAgwBwAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T05:32:09.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-26T05:32:09.61Z"
             },
             {
               "$type": "Document",
@@ -120,8 +144,7 @@
               "RelativeToolTip": "CheckDateWork.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAEwCAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T04:59:36.888Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-26T04:59:36.888Z"
             },
             {
               "$type": "Document",
@@ -133,36 +156,32 @@
               "RelativeToolTip": "SaveCSV.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAvwAsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T04:52:28.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-26T04:52:28.072Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-26T04:18:35.596Z"
+              "WhenOpened": "2024-02-26T04:18:35.596Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAAGoAAAAAAAAAAAAqwHsAAAAbAAAA",
+              "ViewState": "AQIAALgAAAAAAAAAAAD4v80AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T04:18:33.004Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

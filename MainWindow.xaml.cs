@@ -196,5 +196,14 @@ namespace WPF_Shema_26_02_2024
             Window1 window1 = new Window1();
             window1.Show();
         }
+
+        private void ButtonClearAll_Click(object sender, RoutedEventArgs e)
+        {
+            list.Clear();
+            TextBox_mod_number.Clear();
+            TextBox_mod_xcoor.Clear();
+            TextBox_ward_name.Clear();
+            TextBox_ward_xcoor.Clear();
+        }
     }
 }
