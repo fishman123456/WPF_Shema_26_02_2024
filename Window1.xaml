@@ -23,6 +23,10 @@
          4) В чертеже нужно обязательно расставить имя шкафа возле каждого кабеля. 
             Имена шкафов должны иметь одинаковые координаты по оси Х.
         </TextBlock>
+        <TextBlock LineHeight="1" FontSize="20" Margin="25,225,25,25"   TextWrapping="Wrap" >
+         5) Не забываем предварительно отсортировать по координате Х.
+            
+        </TextBlock>
         <TextBlock LineHeight="1" FontSize="20" Margin="25,175,25,25"   TextWrapping="Wrap" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="#FF27AD1C" >
 13-03-2024 U-83
         </TextBlock>
