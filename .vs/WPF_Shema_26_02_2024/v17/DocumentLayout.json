@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|c:\\users\\fishman\\documents\\github\\wpf_shema_26_02_2024\\window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|solutionrelative:window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|c:\\users\\fishman\\documents\\github\\wpf_shema_26_02_2024\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{2AE8D9DD-CBFD-4CB0-AD93-B11B64A09423}|WPF_Shema_26_02_2024.csproj|solutionrelative:window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 253,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -85,12 +89,25 @@
               "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Window1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\Window1.xaml.cs",
+              "RelativeDocumentMoniker": "Window1.xaml.cs",
+              "ToolTip": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\Window1.xaml.cs",
+              "RelativeToolTip": "Window1.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T11:23:17.434Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ClassDiagram1.cd",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\ClassDiagram1.cd",
               "RelativeDocumentMoniker": "ClassDiagram1.cd",
@@ -101,19 +118,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Window1.xaml",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\Window1.xaml",
               "RelativeDocumentMoniker": "Window1.xaml",
               "ToolTip": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\Window1.xaml",
               "RelativeToolTip": "Window1.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-11T10:12:03.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T10:12:03.686Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Help.cs",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\Help.cs",
               "RelativeDocumentMoniker": "Help.cs",
@@ -125,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "WardControl.cs",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\WardControl.cs",
               "RelativeDocumentMoniker": "WardControl.cs",
@@ -133,12 +149,11 @@
               "RelativeToolTip": "WardControl.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAgwBwAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T05:32:09.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-26T05:32:09.61Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "CheckDateWork.cs",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\CheckDateWork.cs",
               "RelativeDocumentMoniker": "CheckDateWork.cs",
@@ -150,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "SaveCSV.cs",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\SaveCSV.cs",
               "RelativeDocumentMoniker": "SaveCSV.cs",
@@ -158,8 +173,7 @@
               "RelativeToolTip": "SaveCSV.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAvwAsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T04:52:28.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-26T04:52:28.072Z"
             },
             {
               "$type": "Document",
@@ -181,7 +195,7 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Shema_26_02_2024\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAAKwAAAAAAAAAAAAtwM0AAAAnAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAawBoAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T04:18:33.004Z",
               "EditorCaption": ""
